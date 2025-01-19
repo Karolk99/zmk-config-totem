@@ -83,10 +83,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P
-         &kp A  &kp S  &kp D  &kp F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMICOLON
-&kp TAB  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH            &kp BACKSLASH
-                       &kp Y  &kp U  &kp SPACE    &kp RET  &lt 1 ESC    &kp BSPC
+        &kp Q  &kp W  &kp E    &kp R      &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P
+        &kp A  &kp S  &kp D    &kp F      &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMICOLON
+&tog 1  &kp Z  &kp X  &kp C    &kp V      &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH            &kp BACKSLASH
+                      &kp TAB  &kp KP_N0  &kp SPACE    &kp RET  &kp ESC      &kp BSPC
             >;
         };
 
@@ -98,8 +98,8 @@
             bindings = <
            &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P
            &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMICOLON
-&kp TILDE  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH            &kp BACKSLASH
-                                   &kp DEL      &lt 0 TAB    &kp SPACE    &kp RET  &lt 0 ESC    &kp BSPC
+&kp TILDE  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH            &tog 0
+                                   &kp DEL      &kp TAB      &kp SPACE    &kp RET  &kp ESC      &kp BSPC
             >;
         };
 
