@@ -11,6 +11,7 @@
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
@@ -135,10 +136,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp EXCL          &kp AT        &kp HASH          &kp DLLR          &kp PRCNT            &kp CARET  &kp AMPS         &kp ASTERISK       &none          &none
-       &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp GRAVE            &none      &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI
-&none  &none             &none         &none             &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES    &none      &kp UNDERSCORE   &kp RC(KP_MINUS)   &kp F12        &none          &none
-                                       &kp C_PREV        &kp C_PP          &kp C_NEXT           &trans     &trans           &trans
+                &kp EXCL          &kp AT        &kp HASH          &kp DLLR          &kp PRCNT            &kp CARET  &kp AMPS         &kp ASTERISK       &none          &none
+                &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp GRAVE            &none      &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI
+&bt BT_CLR_ALL  &none             &none         &none             &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES    &none      &kp UNDERSCORE   &kp RC(KP_MINUS)   &kp F12        &none          &kp LG(LS(KP_NUMBER_4))
+                                                &kp C_PREV        &kp C_PP          &kp C_NEXT           &trans     &trans           &trans
             >;
         };
 
